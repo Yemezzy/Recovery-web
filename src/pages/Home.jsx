@@ -16,7 +16,7 @@ const Home = () => {
         <section></section>
         <section>
           {" "}
-          <p className="md:text-6xl text-3xl font-bold text-white pt-24 md:m-10 m-5">
+          <p className="md:text-6xl text-3xl font-bold text-white md:pt-24 pt-18 md:m-10 m-5 mt-0 md:mt-5">
             Guiding your product <br /> journey to drive <br />
             secure outcomes.
           </p>
