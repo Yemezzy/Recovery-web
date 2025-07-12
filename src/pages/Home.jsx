@@ -148,14 +148,14 @@ const Home = () => {
               </section>
               <section className="flex flex-col items-center">
                 <img src="/img/CIA.png" alt="" className="w-[60%]" />
-                <p className="text-xs md:text-sm mt-1 font-bold">
+                <p className="text-xs  text-center md:text-sm mt-1 font-bold">
                   {" "}
                   Central Intelligence Agency (CIA)
                 </p>
               </section>
               <section className="flex flex-col items-center">
                 <img src="/img/DHS.png" alt="" className="w-[60%]" />
-                <p className="text-xs md:text-sm mt-1 font-bold">
+                <p className="text-xs  text-center md:text-sm mt-1 font-bold">
                   Department of Homeland Security (DHS)
                 </p>
               </section>
@@ -171,7 +171,7 @@ const Home = () => {
               </section>
               <section className="flex flex-col items-center">
                 <img src="/img/NSA.svg" alt="" className="w-[60%]" />
-                <p className="text-xs md:text-sm mt-1 font-bold">
+                <p className="text-xs  text-center md:text-sm mt-1 font-bold">
                   National Security Agency (NSA)
                 </p>
               </section>
@@ -181,7 +181,7 @@ const Home = () => {
                   alt=""
                   className="w-[60%] rounded-full"
                 />
-                <p className="text-xs md:text-sm mt-1 font-bold">
+                <p className="text-xs  text-center md:text-sm mt-1 font-bold">
                   Defense Criminal Investigative Service (DCIS)
                 </p>
               </section>
