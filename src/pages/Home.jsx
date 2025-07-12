@@ -142,7 +142,7 @@ const Home = () => {
             <div className="grid md:grid-cols-3 grid-cols-2 md:mt-0 mt-10 gap-5 text-white">
               <section className="flex flex-col items-center">
                 <img src="/img/FBI.png" alt="" className="w-[60%]" />
-                <p className="text-xs md:text-sm mt-1 font-bold">
+                <p className="text-xs text-center md:text-sm mt-1 font-bold">
                   Federal Bureau of Investigation (FBI)
                 </p>
               </section>
@@ -165,7 +165,7 @@ const Home = () => {
                   alt=""
                   className="w-[60%] rounded-full"
                 />
-                <p className="text-xs md:text-sm mt-1 font-bold">
+                <p className="text-xs text-center md:text-sm mt-1 font-bold">
                   Homeland Security Investigations (HSI)
                 </p>
               </section>
