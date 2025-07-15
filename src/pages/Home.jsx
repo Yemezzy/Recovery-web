@@ -5,29 +5,144 @@ import { FaUsers } from "react-icons/fa";
 import { SiCompilerexplorer } from "react-icons/si";
 import { useState } from 'react'
 import Fotter from '../component/Fotter';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination, Navigation } from "swiper/modules";
+import { FcGoogle } from "react-icons/fc";
+import Box from "@mui/material/Box";
+import Rating from "@mui/material/Rating";
+import Button from "@mui/material/Button";
+import Tooltip from "@mui/material/Tooltip";
+import Typography from "@mui/material/Typography";
+import { MdVerified } from "react-icons/md";
+
 
 const Home = () => {
-
+  const [value, setValue] = React.useState(5);
 
   return (
     <div>
       <Navbar />
       <div className="imagee w-full md:h-[600px] h-[330px] md:grid grid-cols-2 ">
         <section></section>
-        <section>
-          {" "}
-          <p className="md:text-6xl text-3xl font-bold text-white md:pt-24 pt-18 md:m-10 m-5 mt-0 md:mt-5">
-            Guiding your product <br /> journey to drive <br />
-            secure outcomes.
-          </p>
-          <div className="flex gap-5 md:ml-10 ml-5 pt-5 md:pt-0">
-            <button className="border-white hover:bg-white hover:text-[#140641] transition-all rounded-md border-2 text-lg font-semibold text-white px-10 py-3">
-              How we work
-            </button>
-            <button className="hover:border-white hover:bg-transparent bg-white text-[#140641] transition-all rounded-md border-2 text-lg font-semibold hover:text-white px-10 py-3">
-              Get Started
-            </button>
-          </div>
+        <section className="md:p-10 pt-10">
+          <>
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={30}
+              loop={true}
+              pagination={{
+                clickable: true,
+              }}
+              modules={[Pagination, Navigation]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                <div>
+                  <p className="md:text-5xl text-3xl font-bold text-white md:pt-20 md:m-10 m-5 mt-0 md:mt-5">
+                    Cyber Investigators
+                  </p>
+                  <p className="md:text-xl text-lg font-medium text-white md:pt-10  md:m-10 m-5 mt-0 md:mt-5">
+                    Fully Licensed, Accredited &amp; Insured Private Cyber
+                    investigators. Experts in Cyber Fraud/Scam Investigations,
+                    Crypto Tracing &amp; Social Media Harassment.
+                  </p>
+                  <div className="flex gap-5 md:ml-10 ml-5  md:pt-0">
+                    <button className="border-white hover:bg-white hover:text-[#140641] transition-all rounded-md border-2 md:text-lg font-semibold text-white md:px-10 px-3 py-3">
+                      How we work
+                    </button>
+                    <button className="hover:border-white hover:bg-transparent bg-white text-[#140641] transition-all rounded-md border-2 md:text-lg font-semibold hover:text-white px-3 md:px-10 py-3">
+                      Get Started
+                    </button>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div>
+                  <p className="md:text-5xl text-3xl font-bold text-white md:pt-20 md:m-10 m-5 mt-0 md:mt-5">
+                    Social Media Investigation
+                  </p>
+                  <p className="md:text-xl text-lg font-medium text-white md:pt-10  md:m-10 m-5 mt-0 md:mt-5">
+                    Experiencing online harassment and impersonation? We expose
+                    anonymous offenders.
+                  </p>
+                  <div className="flex gap-5 md:ml-10 ml-5 pt-5 md:pt-0">
+                    <button className="border-white hover:bg-white hover:text-[#140641] transition-all rounded-md border-2 md:text-lg font-semibold text-white md:px-10 px-3 py-3">
+                      How we work
+                    </button>
+                    <button className="hover:border-white hover:bg-transparent bg-white text-[#140641] transition-all rounded-md border-2 md:text-lg font-semibold hover:text-white md:px-10 px-3 py-3">
+                      Get Started
+                    </button>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div>
+                  <p className="md:text-5xl text-3xl font-bold text-white md:pt-20 md:m-10 m-5 mt-0 md:mt-5">
+                    Cybercrime Investigation
+                  </p>
+                  <p className="md:text-xl text-lg font-medium text-white md:pt-10 md:m-10 m-5 mt-0 md:mt-5">
+                    International Private Intelligence Solutions. We empower
+                    individuals and businesses by outpacing criminals and
+                    unveiling hidden risks.
+                  </p>
+                  <div className="flex gap-5 md:ml-10 ml-5 pt-5 md:pt-0">
+                    <button className="border-white hover:bg-white hover:text-[#140641] transition-all rounded-md border-2 md:text-lg font-semibold text-white px-3 md:px-10 py-3">
+                      How we work
+                    </button>
+                    <button className="hover:border-white hover:bg-transparent bg-white text-[#140641] transition-all rounded-md border-2 md:text-lg font-semibold hover:text-white px-3 md:px-10 py-3">
+                      Get Started
+                    </button>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div>
+                  <p className="md:text-5xl text-3xl font-bold text-white md:pt-20 md:m-10 m-5 mt-0 md:mt-5">
+                    Cryptocurrency Tracing
+                  </p>
+                  <p className="md:text-xl text-lg font-medium text-white md:pt-10 md:m-10 m-5 mt-0 md:mt-5">
+                    Using custom AI based tools, we help victims of
+                    cryptocurrency scams through investigation, disruption and
+                    recovery operations.
+                  </p>
+                  <div className="flex gap-5 md:ml-10 ml-5 pt-5 md:pt-0">
+                    <button className="border-white hover:bg-white hover:text-[#140641] transition-all rounded-md border-2 md:text-lg font-semibold text-white px-3 md:px-10 py-3">
+                      How we work
+                    </button>
+                    <button className="hover:border-white hover:bg-transparent bg-white text-[#140641] transition-all rounded-md border-2 md:text-lg font-semibold hover:text-white px-3 md:px-10 py-3">
+                      Get Started
+                    </button>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div>
+                  <p className="md:text-5xl text-3xl font-bold text-white md:pt-20 md:m-10 m-5 mt-0 md:mt-5">
+                    Cyber Fraud Investigation
+                  </p>
+                  <p className="md:text-xl md:text-lg font-medium text-white md:pt-10 md:m-10 m-5 mt-0 md:mt-5">
+                    Victim of an online scam? Romance scams, investment fraud or
+                    phishing attacks: We understand the methods used by scam
+                    syndicates and can identify offenders.
+                  </p>
+                  <div className="flex gap-5 md:ml-10 ml-5 pt-3 pb-10 md:pt-0">
+                    <button className="border-white hover:bg-white hover:text-[#140641] transition-all rounded-md border-2 md:text-lg font-semibold text-white px-3 md:px-10 py-3">
+                      How we work
+                    </button>
+                    <button className="hover:border-white hover:bg-transparent bg-white text-[#140641] transition-all rounded-md border-2 md:text-lg font-semibold hover:text-white px-3 md:px-10 py-3">
+                      Get Started
+                    </button>
+                  </div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </>
         </section>
       </div>
 
@@ -187,6 +302,186 @@ const Home = () => {
               </section>
             </div>
           </section>
+        </div>
+      </div>
+
+      <div className="md:pt-22  md:px-22 px-5">
+        <p className="md:text-3xl text-xl font-bold mt-5 md:mt-0">
+          WHAT OUR CLIENTS SAY
+        </p>
+        <div className="flex gap-5 md:mt-10 mt-5 overflow-x-scroll w-full no-scrollbar">
+          <div className="flex gap-5 ">
+            
+            <section className="border-2 p-5 border-black w-[350px] shrink-0">
+              <div className="flex justify-between">
+                <section className="flex gap-2 items-center items-center">
+                  <div className="border-2 border-black w-[50px] h-[50px] rounded-full "></div>
+                  <div>
+                    <p className="font-bold">Sarah M</p>
+                    <p className="text-xs">27/06/2024</p>
+                  </div>
+                </section>
+                <section>
+                  <FcGoogle className="text-3xl" />
+                </section>
+              </div>
+              <div>
+                <section className="mt-3 flex items-center gap-2">
+                  <Rating name="read-only" value={value} readOnly />
+                  <Tooltip
+                    placement="right-end"
+                    title="Trustindex verifies that the original source of the review is Google."
+                    arrow
+                  >
+                    <MdVerified className="text-lg text-blue-600" />
+                  </Tooltip>
+                </section>
+                <section className="text-sm font-medium mt-2">
+                  I recently had the pleasure of working with Cybertrace, and I
+                  couldn't be more impressed with their service. Although the
+                  circumstances requiring their assistance were stressful, their
+                  professionalism was evident from start to finish. The team
+                  kept me updated every step of the way, providing regular
+                  progress updates and ensuring I was always in the loop.
+                </section>
+              </div>
+            </section>
+
+            <section className="border-2 p-5 border-black w-[350px] shrink-0">
+              <div className="flex justify-between">
+                <section className="flex gap-2 items-center items-center">
+                  <div className="border-2 border-black w-[50px] h-[50px] rounded-full "></div>
+                  <div>
+                    <p className="font-bold">Mark Richards</p>
+                    <p className="text-xs">07/05/2024</p>
+                  </div>
+                </section>
+                <section>
+                  <FcGoogle className="text-3xl" />
+                </section>
+              </div>
+              <div>
+                <section className="mt-3 flex items-center gap-2">
+                  <Rating name="read-only" value={value} readOnly />
+                  <Tooltip
+                    placement="right-end"
+                    title="Trustindex verifies that the original source of the review is Google."
+                    arrow
+                  >
+                    <MdVerified className="text-lg text-blue-600" />
+                  </Tooltip>
+                </section>
+                <section className="text-sm font-medium mt-2">
+                  Thanks very much to Sam for her wonderful support on a very
+                  serious case involving cyber harassment of my daughter. Her
+                  personal commitment to our situation was very real and
+                  outstanding.
+                </section>
+              </div>
+            </section>
+
+            <section className="border-2 p-5 border-black w-[350px] shrink-0">
+              <div className="flex justify-between">
+                <section className="flex gap-2 items-center items-center">
+                  <div className="border-2 border-black w-[50px] h-[50px] rounded-full "></div>
+                  <div>
+                    <p className="font-bold">Kate Kearney</p>
+                    <p className="text-xs">07/05/2024</p>
+                  </div>
+                </section>
+                <section>
+                  <FcGoogle className="text-3xl" />
+                </section>
+              </div>
+              <div>
+                <section className="mt-3 flex items-center gap-2">
+                  <Rating name="read-only" value={value} readOnly />
+                  <Tooltip
+                    placement="right-end"
+                    title="Trustindex verifies that the original source of the review is Google."
+                    arrow
+                  >
+                    <MdVerified className="text-lg text-blue-600" />
+                  </Tooltip>
+                </section>
+                <section className="text-sm font-medium mt-2">
+                  Cybertrace are very professional and honest. I lost funds
+                  through an investment fraud and they successfully conducted
+                  tracing of my cryptocurrency. I highly recommend the services
+                  of Cybertrace.
+                </section>
+              </div>
+            </section>
+
+            <section className="border-2 p-5 border-black w-[350px] shrink-0">
+              <div className="flex justify-between">
+                <section className="flex gap-2 items-center items-center">
+                  <div className="border-2 border-black w-[50px] h-[50px] rounded-full "></div>
+                  <div>
+                    <p className="font-bold">Tash Peterson</p>
+                    <p className="text-xs">16/07/2024</p>
+                  </div>
+                </section>
+                <section>
+                  <FcGoogle className="text-3xl" />
+                </section>
+              </div>
+              <div>
+                <section className="mt-3 flex items-center gap-2">
+                  <Rating name="read-only" value={value} readOnly />
+                  <Tooltip
+                    placement="right-end"
+                    title="Trustindex verifies that the original source of the review is Google."
+                    arrow
+                  >
+                    <MdVerified className="text-lg text-blue-600" />
+                  </Tooltip>
+                </section>
+                <section className="text-sm font-medium mt-2">
+                  They did an incredible job finding the identities of about 60
+                  people who had been slandering me online and investigating
+                  hate groups inciting harassment and violence towards me. They
+                  even had extra work to do in the case but didn’t ask for more
+                  costs. Thank you for helping victims of online bullying and
+                  slander.
+                </section>
+              </div>
+            </section>
+
+            <section className="border-2 p-5 border-black w-[350px] shrink-0">
+              <div className="flex justify-between">
+                <section className="flex gap-2 items-center items-center">
+                  <div className="border-2 border-black w-[50px] h-[50px] rounded-full "></div>
+                  <div>
+                    <p className="font-bold">Nicolas Smoll</p>
+                    <p className="text-xs">27/06/2024</p>
+                  </div>
+                </section>
+                <section>
+                  <FcGoogle className="text-3xl" />
+                </section>
+              </div>
+              <div>
+                <section className="mt-3 flex items-center gap-2">
+                  <Rating name="read-only" value={value} readOnly />
+                  <Tooltip
+                    placement="right-end"
+                    title="Trustindex verifies that the original source of the review is Google."
+                    arrow
+                  >
+                    <MdVerified className="text-lg text-blue-600" />
+                  </Tooltip>
+                </section>
+                <section className="text-sm font-medium mt-2">
+                  I appreciated the work this team did to try and find my
+                  stalker. It was a tricky situation, and they managed to find
+                  the stalker online. What surprised me the most was the amount
+                  of in-depth research they did into my case. The depth and
+                  completeness really surprised me.
+                </section>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
 

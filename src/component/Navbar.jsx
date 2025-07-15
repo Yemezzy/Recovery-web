@@ -43,7 +43,7 @@ const Navbar = () => {
           </button>
         </div>
         {isOpen && (
-          <ul className="mt-4 fixed w-[100%] border-white border-2 text-white bg-[#140641] font-medium md:hidden">
+          <ul className="mt-4 w-[100%] border-white border-2 text-white bg-[#140641] font-medium md:hidden">
             <Link to="/">
               <li className="block hover:bg-blue-500 border-b-2 border-white p-2 py-3 ">
                 Home

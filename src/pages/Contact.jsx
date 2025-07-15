@@ -3,8 +3,20 @@ import Navbar from '../component/Navbar'
 import { FaDotCircle, FaTelegram } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Fotter from '../component/Fotter';
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormControl from '@mui/material/FormControl';
+import FormLabel from '@mui/material/FormLabel';
 
 const Contact = () => {
+
+  const [value, setValue] = React.useState("female");
+
+  const handleChange = (event) => {
+    setValue(event.target.value);
+  };
+
   return (
     <div>
       <Navbar />
@@ -34,11 +46,13 @@ const Contact = () => {
                   <section className="md:flex gap-5">
                     <input
                       type="text"
+                      required
                       className="p-3 bg-white md:w-[50%] w-full outline-none"
                       placeholder="Your Firstname"
                     />
                     <input
                       type="text"
+                      required
                       className="p-3 bg-white md:w-[50%] w-full mt-5 md:mt-0 outline-none"
                       placeholder="Your Lastname"
                     />
@@ -51,21 +65,60 @@ const Contact = () => {
                     />
                     <input
                       type="text"
+                      required
                       className="p-3 bg-white md:w-[50%] w-full mt-5 md:mt-0  outline-none"
                       placeholder="Your Phone Number"
                     />
                   </section>
                   <section>
-                    <input
-                      type="text"
-                      className="p-3 md:block hidden bg-white w-full mt-5 outline-none"
-                      placeholder=""
-                    />
+                    <div>
+                      <FormControl>
+                        <FormLabel id="demo-controlled-radio-buttons-group">
+                          <p className="text-white md:mt-10 mt-5">
+                            Have you lost money to scam?
+                          </p>
+                        </FormLabel>
+                        <RadioGroup
+                          aria-labelledby="demo-controlled-radio-buttons-group"
+                          name="controlled-radio-buttons-group"
+                          value={value}
+                          onChange={handleChange}
+                        >
+                          <FormControlLabel
+                            value="Yes"
+                            control={
+                              <Radio
+                                sx={{
+                                  color: "white",
+                                  "&.Mui-checked": { color: "white" },
+                                }}
+                              />
+                            }
+                            label={
+                              <span style={{ color: "white" }}>Yes</span>
+                            }
+                          />
+                          <FormControlLabel
+                            value="No"
+                            control={
+                              <Radio
+                                sx={{
+                                  color: "white",
+                                  "&.Mui-checked": { color: "white" },
+                                }}
+                              />
+                            }
+                            label={<span style={{ color: "white" }}>No</span>}
+                          />
+                        </RadioGroup>
+                      </FormControl>
+                    </div>
                     <textarea
                       name=""
                       id=""
+                      required
                       className="p-3 bg-white h-[200px] w-full mt-5 outline-none"
-                      placeholder=""
+                      placeholder="Comment"
                     />
                   </section>
                   <button className="bg-red-800 text-white py-4 w-full mt-5 font-bold">
