@@ -24,7 +24,7 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <div className="imagee w-full md:h-[600px] h-[330px] md:grid grid-cols-2 ">
+      <div className="imagee w-full md:h-[600px] h-[400px] md:grid grid-cols-2 ">
         <section></section>
         <section className="md:p-10 pt-10">
           <>
@@ -35,6 +35,7 @@ const Home = () => {
               pagination={{
                 clickable: true,
               }}
+              Navigation={true}
               modules={[Pagination, Navigation]}
               className="mySwiper"
             >
@@ -311,7 +312,6 @@ const Home = () => {
         </p>
         <div className="flex gap-5 md:mt-10 mt-5 overflow-x-scroll w-full no-scrollbar">
           <div className="flex gap-5 ">
-            
             <section className="border-2 p-5 border-black w-[350px] shrink-0">
               <div className="flex justify-between">
                 <section className="flex gap-2 items-center items-center">
