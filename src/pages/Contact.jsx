@@ -125,7 +125,7 @@ const Contact = () => {
                 </div>
               </form>
             </section>
-            <section className="border-[#140641] border-8 md:w-[40%] border-l-none p-5">
+            <section className="border-[#140641] mb:block hidden border-8 md:w-[40%] border-l-none p-5">
               <p className="font-bold mt-10">
                 For fast response contact our agents via telegram:
               </p>
