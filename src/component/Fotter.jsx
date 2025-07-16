@@ -8,7 +8,7 @@ const Fotter = () => {
         <section className="md:pl-22">
           <div className="flex items-center">
             <img
-              src="/public/img/PHOTO-2025-07-15-14-09-06 2.jpg"
+              src="/img/PHOTO-2025-07-15-14-09-06 2.jpg"
               alt=""
               className="w-24 "
             />
