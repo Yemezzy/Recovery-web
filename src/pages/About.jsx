@@ -121,7 +121,7 @@ const About = () => {
       <div className="md:py-22 px-5 md:px-0">
         <section>
           <p className="font-bold md:text-5xl text-2xl pt-10 md:text-center">
-            CrowdStrike protects:
+            CyberRecon protects:
           </p>
           <div className="md:flex justify-center">
             <div className="md:px-22 py-10 grid md:grid-cols-3 md:w-[90%] gap-10 ">

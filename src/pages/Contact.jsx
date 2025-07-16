@@ -94,9 +94,7 @@ const Contact = () => {
                                 }}
                               />
                             }
-                            label={
-                              <span style={{ color: "white" }}>Yes</span>
-                            }
+                            label={<span style={{ color: "white" }}>Yes</span>}
                           />
                           <FormControlLabel
                             value="No"
@@ -136,7 +134,23 @@ const Contact = () => {
                 <section className="md:mt-10 mt-5 flex gap-3 items-center">
                   <div className="border-2 w-[70px] rounded-full h-[70px]"></div>
                   <div>
-                    <p className="font-bold text-sm">ALEX STEVE</p>
+                    <p className="font-bold text-sm">Thomas Cooper</p>
+                    <Link to="https://t.me/TheAmericaParty_official">
+                      <div className="mt- text-xs flex gap-2 items-center">
+                        <FaTelegram className="text-blue-700" />
+                        <p className="underline text-blue-700">
+                          https://t.me/TheAmericaParty_official
+                        </p>
+                      </div>
+                    </Link>
+                  </div>
+                </section>
+                <section className="mt-5 flex gap-3 items-center">
+                  <div className="w-[70px] border-2 rounded-full h-[70px]">
+                  
+                  </div>
+                  <div>
+                    <p className="font-bold text-sm">Sophia Mitchell</p>
                     <Link to="https://t.me/TheAmericaParty_official">
                       <div className="mt- text-xs flex gap-2 items-center">
                         <FaTelegram className="text-blue-700" />
@@ -150,7 +164,7 @@ const Contact = () => {
                 <section className="mt-5 flex gap-3 items-center">
                   <div className="border-2 w-[70px] rounded-full h-[70px]"></div>
                   <div>
-                    <p className="font-bold text-sm">ALEX STEVE</p>
+                    <p className="font-bold text-sm">William Harris</p>
                     <Link to="https://t.me/TheAmericaParty_official">
                       <div className="mt- text-xs flex gap-2 items-center">
                         <FaTelegram className="text-blue-700" />
@@ -164,21 +178,7 @@ const Contact = () => {
                 <section className="mt-5 flex gap-3 items-center">
                   <div className="border-2 w-[70px] rounded-full h-[70px]"></div>
                   <div>
-                    <p className="font-bold text-sm">ALEX STEVE</p>
-                    <Link to="https://t.me/TheAmericaParty_official">
-                      <div className="mt- text-xs flex gap-2 items-center">
-                        <FaTelegram className="text-blue-700" />
-                        <p className="underline text-blue-700">
-                          https://t.me/TheAmericaParty_official
-                        </p>
-                      </div>
-                    </Link>
-                  </div>
-                </section>
-                <section className="mt-5 flex gap-3 items-center">
-                  <div className="border-2 w-[70px] rounded-full h-[70px]"></div>
-                  <div>
-                    <p className="font-bold text-sm">ALEX STEVE</p>
+                    <p className="font-bold text-sm">James Anderson</p>
                     <Link to="https://t.me/TheAmericaParty_official">
                       <div className="mt- text-xs flex gap-2 items-center">
                         <FaTelegram className="text-blue-700" />

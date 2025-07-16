@@ -8,12 +8,12 @@ const Fotter = () => {
         <section className="md:pl-22">
           <div className="flex items-center">
             <img
-              src="https://www.globalshipwave.com/img/Asset%201.png"
+              src="/public/img/PHOTO-2025-07-15-14-09-06 2.jpg"
               alt=""
-              className="w-20 "
+              className="w-24 "
             />
             <div className="md:block hidden">
-              <p className="font-extrabold ml-2">Cyber Security</p>
+              <p className="font-extrabold ml-2">Cyber Recon</p>
               <p className="text-xs font-extrabold ml-2">100% Secured</p>
             </div>
           </div>

@@ -10,14 +10,10 @@ const Navbar = () => {
     <div>
       <nav>
         <p className="text-center p-5 bg-[#140641] text-white font-semibold text-sm">
-          Fal.Con 2025: Leading cybersecurity into the AI era
+          Cyber Recon 2025: Leading cybersecurity into the AI era
         </p>
         <div className="px-10 py-5  flex justify-between items-center">
-          <img
-            src="https://www.globalshipwave.com/img/Asset%201.png"
-            alt=""
-            className="w-15"
-          />
+          <img src="/img/Asset 1.png" alt="" className="md:w-15 w-10" />
           <ul className="md:flex gap-10 font-semibold hidden">
             <Link to="/">
               <li>Home</li>
@@ -32,9 +28,11 @@ const Navbar = () => {
               <li>Contact</li>
             </Link>
           </ul>
-          <button className="border-[#140641] md:block hidden border-2 px-3 py-2 rounded-lg">
-            Get started
-          </button>
+          <Link to="/contact-us">
+            <button className="border-[#140641] md:block hidden border-2 px-3 py-2 rounded-lg">
+              Get started
+            </button>
+          </Link>
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="border-[#140641] md:hidden block border-2 px-3 py-2 rounded-lg"

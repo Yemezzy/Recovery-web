@@ -62,3 +62,11 @@
   /* background-color: white; */
 }
 
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ffffff;
+}
+

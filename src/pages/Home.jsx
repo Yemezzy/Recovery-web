@@ -16,6 +16,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import { MdVerified } from "react-icons/md";
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -50,12 +51,16 @@ const Home = () => {
                     Crypto Tracing &amp; Social Media Harassment.
                   </p>
                   <div className="flex gap-5 md:ml-10 ml-5  md:pt-0">
-                    <button className="border-white hover:bg-white hover:text-[#140641] transition-all rounded-md border-2 md:text-lg font-semibold text-white md:px-10 px-3 py-3">
-                      How we work
-                    </button>
-                    <button className="hover:border-white hover:bg-transparent bg-white text-[#140641] transition-all rounded-md border-2 md:text-lg font-semibold hover:text-white px-3 md:px-10 py-3">
-                      Get Started
-                    </button>
+                    <Link to="/services">
+                      <button className="border-white hover:bg-white hover:text-[#140641] transition-all rounded-md border-2 md:text-lg font-semibold text-white md:px-10 px-3 py-3">
+                        How we work
+                      </button>
+                    </Link>
+                    <Link to="/contact-us">
+                      <button className="hover:border-white hover:bg-transparent bg-white text-[#140641] transition-all rounded-md border-2 md:text-lg font-semibold hover:text-white px-3 md:px-10 py-3">
+                        Get Started
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </SwiperSlide>
@@ -70,12 +75,16 @@ const Home = () => {
                     anonymous offenders.
                   </p>
                   <div className="flex gap-5 md:ml-10 ml-5 pt-5 md:pt-0">
-                    <button className="border-white hover:bg-white hover:text-[#140641] transition-all rounded-md border-2 md:text-lg font-semibold text-white md:px-10 px-3 py-3">
-                      How we work
-                    </button>
-                    <button className="hover:border-white hover:bg-transparent bg-white text-[#140641] transition-all rounded-md border-2 md:text-lg font-semibold hover:text-white md:px-10 px-3 py-3">
-                      Get Started
-                    </button>
+                    <Link to="/services">
+                      <button className="border-white hover:bg-white hover:text-[#140641] transition-all rounded-md border-2 md:text-lg font-semibold text-white md:px-10 px-3 py-3">
+                        How we work
+                      </button>
+                    </Link>
+                    <Link to="/contact-us">
+                      <button className="hover:border-white hover:bg-transparent bg-white text-[#140641] transition-all rounded-md border-2 md:text-lg font-semibold hover:text-white px-3 md:px-10 py-3">
+                        Get Started
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </SwiperSlide>
@@ -91,12 +100,16 @@ const Home = () => {
                     unveiling hidden risks.
                   </p>
                   <div className="flex gap-5 md:ml-10 ml-5 pt-5 md:pt-0">
-                    <button className="border-white hover:bg-white hover:text-[#140641] transition-all rounded-md border-2 md:text-lg font-semibold text-white px-3 md:px-10 py-3">
-                      How we work
-                    </button>
-                    <button className="hover:border-white hover:bg-transparent bg-white text-[#140641] transition-all rounded-md border-2 md:text-lg font-semibold hover:text-white px-3 md:px-10 py-3">
-                      Get Started
-                    </button>
+                    <Link to="/services">
+                      <button className="border-white hover:bg-white hover:text-[#140641] transition-all rounded-md border-2 md:text-lg font-semibold text-white md:px-10 px-3 py-3">
+                        How we work
+                      </button>
+                    </Link>
+                    <Link to="/contact-us">
+                      <button className="hover:border-white hover:bg-transparent bg-white text-[#140641] transition-all rounded-md border-2 md:text-lg font-semibold hover:text-white px-3 md:px-10 py-3">
+                        Get Started
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </SwiperSlide>
@@ -112,12 +125,16 @@ const Home = () => {
                     recovery operations.
                   </p>
                   <div className="flex gap-5 md:ml-10 ml-5 pt-5 md:pt-0">
-                    <button className="border-white hover:bg-white hover:text-[#140641] transition-all rounded-md border-2 md:text-lg font-semibold text-white px-3 md:px-10 py-3">
-                      How we work
-                    </button>
-                    <button className="hover:border-white hover:bg-transparent bg-white text-[#140641] transition-all rounded-md border-2 md:text-lg font-semibold hover:text-white px-3 md:px-10 py-3">
-                      Get Started
-                    </button>
+                    <Link to="/services">
+                      <button className="border-white hover:bg-white hover:text-[#140641] transition-all rounded-md border-2 md:text-lg font-semibold text-white md:px-10 px-3 py-3">
+                        How we work
+                      </button>
+                    </Link>
+                    <Link to="/contact-us">
+                      <button className="hover:border-white hover:bg-transparent bg-white text-[#140641] transition-all rounded-md border-2 md:text-lg font-semibold hover:text-white px-3 md:px-10 py-3">
+                        Get Started
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </SwiperSlide>
@@ -197,7 +214,7 @@ const Home = () => {
       <div className="md:pt-22">
         <div className="grid md:grid-cols-2 md:px-20 p-5 items-center">
           <section>
-            <p className="font-semibold text-lg">Cybersecurity Consulting</p>
+            <p className="font-semibold text-lg">Cyber Recon Consulting</p>
             <p className="md:text-2xl text-xl mt-2">
               Combat attackers with experts in incident response, strategic
               threat readiness, and transformative cyber defense
@@ -315,7 +332,13 @@ const Home = () => {
             <section className="border-2 p-5 border-black w-[350px] shrink-0">
               <div className="flex justify-between">
                 <section className="flex gap-2 items-center items-center">
-                  <div className="border-2 border-black w-[50px] h-[50px] rounded-full "></div>
+                  <div className=" w-[50px] h-[50px] rounded-full ">
+                    <img
+                      src="https://lh3.googleusercontent.com/a-/ALV-UjUUBem_9-XXv8gr1CdQPc9l-hD0B-y1C9G2oe8KeF_3kG-DQ9NAOw=w80-h80-c-rp-mo-br100"
+                      alt=""
+                      className="w-full"
+                    />
+                  </div>
                   <div>
                     <p className="font-bold">Sarah M</p>
                     <p className="text-xs">27/06/2024</p>
@@ -337,7 +360,7 @@ const Home = () => {
                   </Tooltip>
                 </section>
                 <section className="text-sm font-medium mt-2">
-                  I recently had the pleasure of working with Cybertrace, and I
+                  I recently had the pleasure of working with CyberRecon, and I
                   couldn't be more impressed with their service. Although the
                   circumstances requiring their assistance were stressful, their
                   professionalism was evident from start to finish. The team
@@ -350,7 +373,13 @@ const Home = () => {
             <section className="border-2 p-5 border-black w-[350px] shrink-0">
               <div className="flex justify-between">
                 <section className="flex gap-2 items-center items-center">
-                  <div className="border-2 border-black w-[50px] h-[50px] rounded-full "></div>
+                  <div className="w-[50px] h-[50px] rounded-full ">
+                    <img
+                      src="https://lh3.googleusercontent.com/a-/ALV-UjVszAol7-AcHXDN-xr-0wf7gZyIA2HyT9Pu4wOgJ2tpbDhEn4_s=w80-h80-c-rp-mo-br100"
+                      alt=""
+                      className="w-full"
+                    />
+                  </div>
                   <div>
                     <p className="font-bold">Mark Richards</p>
                     <p className="text-xs">07/05/2024</p>
@@ -383,7 +412,13 @@ const Home = () => {
             <section className="border-2 p-5 border-black w-[350px] shrink-0">
               <div className="flex justify-between">
                 <section className="flex gap-2 items-center items-center">
-                  <div className="border-2 border-black w-[50px] h-[50px] rounded-full "></div>
+                  <div className="w-[50px] h-[50px] rounded-full ">
+                    <img
+                      src="https://lh3.googleusercontent.com/a/ACg8ocLCLVcdVVbl3yd71rUIa-bKPvY2HPqY6X8ZCOtbYn3uotZbGg=w80-h80-c-rp-mo-br100"
+                      alt=""
+                      className="w-full"
+                    />
+                  </div>
                   <div>
                     <p className="font-bold">Kate Kearney</p>
                     <p className="text-xs">07/05/2024</p>
@@ -405,10 +440,10 @@ const Home = () => {
                   </Tooltip>
                 </section>
                 <section className="text-sm font-medium mt-2">
-                  Cybertrace are very professional and honest. I lost funds
+                  CyberRecon are very professional and honest. I lost funds
                   through an investment fraud and they successfully conducted
                   tracing of my cryptocurrency. I highly recommend the services
-                  of Cybertrace.
+                  of CyberRecon.
                 </section>
               </div>
             </section>
@@ -416,7 +451,13 @@ const Home = () => {
             <section className="border-2 p-5 border-black w-[350px] shrink-0">
               <div className="flex justify-between">
                 <section className="flex gap-2 items-center items-center">
-                  <div className="border-2 border-black w-[50px] h-[50px] rounded-full "></div>
+                  <div className="w-[50px] h-[50px] rounded-full ">
+                    <img
+                      src="https://lh3.googleusercontent.com/a-/ALV-UjWRimgcJkN36LKuZDhkkDjhj_wkBjsWo86Vl4x4EwUpyW8vUD0l=w80-h80-c-rp-mo-br100"
+                      alt=""
+                      className="w-full"
+                    />
+                  </div>
                   <div>
                     <p className="font-bold">Tash Peterson</p>
                     <p className="text-xs">16/07/2024</p>
@@ -451,9 +492,15 @@ const Home = () => {
             <section className="border-2 p-5 border-black w-[350px] shrink-0">
               <div className="flex justify-between">
                 <section className="flex gap-2 items-center items-center">
-                  <div className="border-2 border-black w-[50px] h-[50px] rounded-full "></div>
+                  <div className="w-[50px] h-[50px] rounded-full ">
+                    <img
+                      src="https://lh3.googleusercontent.com/a/ACg8ocJKmzQVeZ785HYnT5Zlh-TrccAM4EXYjBhqgboFMsEXGu1NHQ=w80-h80-c-rp-mo-br100"
+                      alt=""
+                      className="w-full"
+                    />
+                  </div>
                   <div>
-                    <p className="font-bold">Nicolas Smoll</p>
+                    <p className="font-bold">Stefanie F.</p>
                     <p className="text-xs">27/06/2024</p>
                   </div>
                 </section>
@@ -487,7 +534,7 @@ const Home = () => {
 
       <div className=" ">
         <div
-          className="md:p-20 p-5 shadow-xl bg-[#140641] text-white md:my-28 my-20 md:mx-5 md:flex
+          className="md:p-20 p-5 shadow-xl bg-[#140641] text-white md:my-28 mt-20 md:mt-28 md:mx-5 md:flex
              flex-row justify-between md:rounded-full "
         >
           <section>
@@ -498,9 +545,10 @@ const Home = () => {
             </div>
           </section>
           <section>
-            <div>
+            <form>
               <input
                 type="text"
+                required
                 placeholder="Enter your Email now to subscribe"
                 className="
                          outline-none mt-3 md:mt-0 p-2 border-2 border-l-2 border-gray-400 w-[400px] pb-3"
@@ -508,15 +556,15 @@ const Home = () => {
               <button className="py-2  px-5 rounded-lg bg-white text-[#140641] mt-3 md:mt-0 md:ml-5">
                 Sign up
               </button>
-            </div>
+            </form>
             <div>
               <p className="md:text-sm text-xs pt-3">
                 By submitting this form, you agree to our
-                <a href="" className="font-semibold border-b-1">
+                <a href="" className="font-semibold mx-1 border-b-1">
                   Terms of Use
                 </a>
                 and acknowledge our
-                <a href="" className="font-semibold border-b-1">
+                <a href="" className="font-semibold ml-1 border-b-1">
                   Privacy Statement
                 </a>
                 .
