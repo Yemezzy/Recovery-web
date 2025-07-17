@@ -7,6 +7,8 @@ import Fotter from '../component/Fotter';
 
 const Contact = () => {
   const [value, setValue] = useState("Yes");
+  const BOT_TOKEN = import.meta.env.VITE_TELEGRAM_BOT_TOKEN;
+  const CHAT_ID = import.meta.env.VITE_TELEGRAM_CHAT_ID;
 
   const handleChange = (event) => {
     setValue(event.target.value);
@@ -32,8 +34,6 @@ const Contact = () => {
 📝 Comment: ${comment}
 `;
 
-    const BOT_TOKEN = "8075710238:AAHoaosTU2i_G0DDeKxvvqTQIMvyBpL4tyI";
-    const CHAT_ID = "-4827766922";
     const TELEGRAM_API = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
 
     try {
