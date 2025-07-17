@@ -49,6 +49,9 @@ const Contact = () => {
       });
 
       alert("Form submitted successfully to Telegram!");
+      setTimeout(() => {
+        window.location.href = "/"
+      }, 1000);
     } catch (error) {
       console.error("Error sending to Telegram:", error);
       alert("Failed to send to Telegram.");
