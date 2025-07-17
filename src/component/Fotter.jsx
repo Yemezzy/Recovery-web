@@ -25,7 +25,7 @@ const Fotter = () => {
             <li className="hover:underline">Documents</li>
           </ul>
           <p className="mt-5 md:block hidden text-sm font-medium ">
-            Copyright © 2025 Palo Alto Networks. All Rights Reserved
+            Copyright © 2025 CyberRecon Intel Networks. All Rights Reserved
           </p>
         </section>
         <section className="md:pl-22 md:p-10 mt-3 md:mt-0">
@@ -43,7 +43,7 @@ const Fotter = () => {
           </ul>
         </section>
         <p className="mt-5 md:hidden block md:text-sm text-xs font-medium ">
-          Copyright © 2025 Palo Alto Networks. All Rights Reserved
+          Copyright © 2025 Copyright © 2025 CyberRecon Intel. All Rights Reserved
         </p>
       </div>
     </div>

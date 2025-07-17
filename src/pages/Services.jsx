@@ -9,18 +9,24 @@ const Services = () => {
     <div>
       <Navbar />
       <div className="imagee w-full md:h-[350px] h-[180px]">
-        <section className="flex w-full h-full text-white items-center justify-center">
+        <section
+          data-aos="fade-right"
+          className="flex w-full h-full text-white items-center justify-center"
+        >
           <FaDotCircle />
           <p className="md:text-6xl text-3xl font-bold ml-5">Services</p>
         </section>
       </div>
       <div className="md:pt-10">
-        <p className="md:text-5xl text-3xl font-bold text-center pt-10">
+        <p
+          data-aos="zoom-in"
+          className="md:text-5xl text-3xl font-bold text-center pt-10"
+        >
           We offer the best range of Security Services.
         </p>
         <div className="md:p-10 p-5">
           <div className="grid md:grid-cols-2 gap-5">
-            <section className="border-2 p-5">
+            <section data-aos="fade-right" className="border-2 p-5">
               <div className="flex items-center gap-2">
                 <FaLongArrowAltRight />
                 <p className="font-bold text-xl underline">
@@ -45,7 +51,7 @@ const Services = () => {
               </ol>
             </section>
 
-            <section className="border-2 p-5">
+            <section data-aos="fade-left" className="border-2 p-5">
               <div className="flex items-center gap-2">
                 <FaLongArrowAltRight />
                 <p className="font-bold text-xl underline">
@@ -68,7 +74,7 @@ const Services = () => {
               </ol>
             </section>
 
-            <section className="border-2 p-5">
+            <section data-aos="fade-right" className="border-2 p-5">
               <div className="flex items-center gap-2">
                 <FaLongArrowAltRight />
                 <p className="font-bold text-xl underline">
@@ -90,7 +96,7 @@ const Services = () => {
               </ol>
             </section>
 
-            <section className="border-2 p-5">
+            <section data-aos="fade-left" className="border-2 p-5">
               <div className="flex items-center gap-2">
                 <FaLongArrowAltRight />
                 <p className="font-bold text-xl underline">
@@ -112,7 +118,7 @@ const Services = () => {
               </ol>
             </section>
 
-            <section className="border-2 p-5">
+            <section data-aos="fade-right" className="border-2 p-5">
               <div className="flex items-center gap-2">
                 <FaLongArrowAltRight />
                 <p className="font-bold text-xl underline">
@@ -134,7 +140,7 @@ const Services = () => {
               </ol>
             </section>
 
-            <section className="border-2 p-5">
+            <section data-aos="fade-left" className="border-2 p-5">
               <div className="flex items-center gap-2">
                 <FaLongArrowAltRight />
                 <p className="font-bold text-xl underline">

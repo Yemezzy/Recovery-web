@@ -3,7 +3,7 @@ import Navbar from '../component/Navbar'
 import { TbCloudLock } from "react-icons/tb";
 import { FaUsers } from "react-icons/fa";
 import { SiCompilerexplorer } from "react-icons/si";
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Fotter from '../component/Fotter';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -17,17 +17,21 @@ import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import { MdVerified } from "react-icons/md";
 import { Link } from 'react-router-dom';
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 
 const Home = () => {
   const [value, setValue] = React.useState(5);
-
+  useEffect(() => {
+    Aos.init({duration: 2000})
+  }, [])
   return (
     <div>
       <Navbar />
       <div className="imagee w-full md:h-[600px] h-[400px] md:grid grid-cols-2 ">
         <section></section>
-        <section className="md:p-10 pt-10">
+        <section data-aos="fade-right" className="md:p-10 pt-10">
           <>
             <Swiper
               slidesPerView={1}
@@ -165,14 +169,23 @@ const Home = () => {
       </div>
 
       <div className="md:pt-22 pt-5 bg-[#fbf9ff] pb-10">
-        <p className="md:text-5xl px-5 md:px-0 text-2xl font-bold md:text-center pt-10">
+        <p
+          data-aos="zoom-in"
+          className="md:text-5xl px-5 md:px-0 text-2xl font-bold md:text-center pt-10"
+        >
           99% faster detection and response¹
         </p>
-        <p className="md:text-3xl px-5 md:px-0 text-xl md:text-center md:pt-7 pt-3">
+        <p
+          data-aos="zoom-in"
+          className="md:text-3xl px-5 md:px-0 text-xl md:text-center md:pt-7 pt-3"
+        >
           CDR that’s faster and smarter than your adversaries
         </p>
         <div className="grid md:grid-cols-3 md:gap-10 gap-5 p-5 md:px-10 md:mt-16 mt-5">
-          <section className=" bg-white rounded-lg shadow-md px-5 py-10">
+          <section
+            data-aos="fade-right"
+            className=" bg-white rounded-lg shadow-md px-5 py-10"
+          >
             <TbCloudLock className="text-[#140641] text-7xl" />
             <p className="text-xl font-bold my-5">
               Accelerate investigations with complete cloud context
@@ -184,7 +197,10 @@ const Home = () => {
             </p>
           </section>
 
-          <section className=" bg-white rounded-lg shadow-md px-5 py-10">
+          <section
+            data-aos="fade-left"
+            className=" bg-white rounded-lg shadow-md px-5 py-10"
+          >
             <FaUsers className="text-[#140641] text-7xl" />
             <p className="text-xl font-bold my-5">
               Get industry-leading runtime protection and expert services
@@ -197,7 +213,10 @@ const Home = () => {
             </p>
           </section>
 
-          <section className=" bg-white rounded-lg shadow-md px-5 py-10">
+          <section
+            data-aos="fade-right"
+            className=" bg-white rounded-lg shadow-md px-5 py-10"
+          >
             <SiCompilerexplorer className="text-[#140641] text-7xl" />
             <p className="text-xl font-bold my-5">
               Translate root cause of attacks into scalable remediation
@@ -213,7 +232,7 @@ const Home = () => {
 
       <div className="md:pt-22">
         <div className="grid md:grid-cols-2 md:px-20 p-5 items-center">
-          <section>
+          <section data-aos="fade-right">
             <p className="font-semibold text-lg">Cyber Recon Consulting</p>
             <p className="md:text-2xl text-xl mt-2">
               Combat attackers with experts in incident response, strategic
@@ -250,7 +269,7 @@ const Home = () => {
               Contact Us
             </button>
           </section>
-          <section className="md:p-10 pt-5 md:pt-0">
+          <section data-aos="fade-left" className="md:p-10 pt-5 md:pt-0">
             <img
               src="/img/team-working-animation-project.jpg"
               alt=""
@@ -262,7 +281,7 @@ const Home = () => {
 
       <div className="py-10 bg-[#140641]">
         <div className="grid md:grid-cols-2 md:px-20 p-5 items-center">
-          <section>
+          <section data-aos="fade-right">
             <p className="md:text-5xl text-3xl text-white font-bold md:p-10 pt-2">
               In trusted collaboration and partnership with leading U.S.
               security and intelligence agencies.
@@ -273,26 +292,38 @@ const Home = () => {
           </section>
           <section>
             <div className="grid md:grid-cols-3 grid-cols-2 md:mt-0 mt-10 gap-5 text-white">
-              <section className="flex flex-col items-center">
+              <section
+                data-aos="zoom-in"
+                className="flex flex-col items-center"
+              >
                 <img src="/img/FBI.png" alt="" className="w-[60%]" />
                 <p className="text-xs text-center md:text-sm mt-1 font-bold">
                   Federal Bureau of Investigation (FBI)
                 </p>
               </section>
-              <section className="flex flex-col items-center">
+              <section
+                data-aos="zoom-in"
+                className="flex flex-col items-center"
+              >
                 <img src="/img/CIA.png" alt="" className="w-[60%]" />
                 <p className="text-xs  text-center md:text-sm mt-1 font-bold">
                   {" "}
                   Central Intelligence Agency (CIA)
                 </p>
               </section>
-              <section className="flex flex-col items-center">
+              <section
+                data-aos="zoom-in"
+                className="flex flex-col items-center"
+              >
                 <img src="/img/DHS.png" alt="" className="w-[60%]" />
                 <p className="text-xs  text-center md:text-sm mt-1 font-bold">
                   Department of Homeland Security (DHS)
                 </p>
               </section>
-              <section className="flex flex-col items-center">
+              <section
+                data-aos="zoom-in"
+                className="flex flex-col items-center"
+              >
                 <img
                   src="/img/HSI.jpg"
                   alt=""
@@ -302,13 +333,19 @@ const Home = () => {
                   Homeland Security Investigations (HSI)
                 </p>
               </section>
-              <section className="flex flex-col items-center">
+              <section
+                data-aos="zoom-in"
+                className="flex flex-col items-center"
+              >
                 <img src="/img/NSA.svg" alt="" className="w-[60%]" />
                 <p className="text-xs  text-center md:text-sm mt-1 font-bold">
                   National Security Agency (NSA)
                 </p>
               </section>
-              <section className="flex flex-col items-center">
+              <section
+                data-aos="zoom-in"
+                className="flex flex-col items-center"
+              >
                 <img
                   src="/img/DCIS.jpg"
                   alt=""
@@ -324,12 +361,18 @@ const Home = () => {
       </div>
 
       <div className="md:pt-22  md:px-22 px-5">
-        <p className="md:text-3xl text-xl font-bold mt-5 md:mt-0">
+        <p
+          data-aos="fade-right"
+          className="md:text-3xl text-xl font-bold mt-5 md:mt-0"
+        >
           WHAT OUR CLIENTS SAY
         </p>
         <div className="flex gap-5 md:mt-10 mt-5 overflow-x-scroll w-full no-scrollbar">
           <div className="flex gap-5 ">
-            <section className="border-2 p-5 border-black w-[350px] shrink-0">
+            <section
+              data-aos="fade-right"
+              className="border-2 p-5 border-black w-[350px] shrink-0"
+            >
               <div className="flex justify-between">
                 <section className="flex gap-2 items-center items-center">
                   <div className=" w-[50px] h-[50px] rounded-full ">
@@ -370,7 +413,10 @@ const Home = () => {
               </div>
             </section>
 
-            <section className="border-2 p-5 border-black w-[350px] shrink-0">
+            <section
+              data-aos="fade-right"
+              className="border-2 p-5 border-black w-[350px] shrink-0"
+            >
               <div className="flex justify-between">
                 <section className="flex gap-2 items-center items-center">
                   <div className="w-[50px] h-[50px] rounded-full ">
@@ -409,7 +455,10 @@ const Home = () => {
               </div>
             </section>
 
-            <section className="border-2 p-5 border-black w-[350px] shrink-0">
+            <section
+              data-aos="fade-right"
+              className="border-2 p-5 border-black w-[350px] shrink-0"
+            >
               <div className="flex justify-between">
                 <section className="flex gap-2 items-center items-center">
                   <div className="w-[50px] h-[50px] rounded-full ">
@@ -448,7 +497,10 @@ const Home = () => {
               </div>
             </section>
 
-            <section className="border-2 p-5 border-black w-[350px] shrink-0">
+            <section
+              data-aos="fade-right"
+              className="border-2 p-5 border-black w-[350px] shrink-0"
+            >
               <div className="flex justify-between">
                 <section className="flex gap-2 items-center items-center">
                   <div className="w-[50px] h-[50px] rounded-full ">
@@ -489,7 +541,10 @@ const Home = () => {
               </div>
             </section>
 
-            <section className="border-2 p-5 border-black w-[350px] shrink-0">
+            <section
+              data-aos="fade-right"
+              className="border-2 p-5 border-black w-[350px] shrink-0"
+            >
               <div className="flex justify-between">
                 <section className="flex gap-2 items-center items-center">
                   <div className="w-[50px] h-[50px] rounded-full ">
@@ -532,7 +587,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className=" ">
+      <div className=" " data-aos="zoom-in">
         <div
           className="md:p-20 p-5 shadow-xl bg-[#140641] text-white md:my-28 mt-20 md:mt-28 md:mx-5 md:flex
              flex-row justify-between md:rounded-full "
@@ -547,7 +602,7 @@ const Home = () => {
           <section>
             <form>
               <input
-                type="text"
+                type="email"
                 required
                 placeholder="Enter your Email now to subscribe"
                 className="

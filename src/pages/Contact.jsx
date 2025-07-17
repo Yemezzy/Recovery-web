@@ -1,35 +1,82 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Navbar from '../component/Navbar'
 import { FaDotCircle, FaTelegram } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Fotter from '../component/Fotter';
-import Radio from '@mui/material/Radio';
-import RadioGroup from '@mui/material/RadioGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import FormControl from '@mui/material/FormControl';
-import FormLabel from '@mui/material/FormLabel';
+
 
 const Contact = () => {
-
-  const [value, setValue] = React.useState("female");
+  const [value, setValue] = useState("Yes");
 
   const handleChange = (event) => {
     setValue(event.target.value);
   };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const firstname = e.target[0].value;
+    const lastname = e.target[1].value;
+    const email = e.target[2].value;
+    const phone = e.target[3].value;
+    const lostMoney = value;
+    const comment = e.target[5].value;
+
+    const message = `
+🚨 New Form Submission:
+👤 First Name: ${firstname}
+👤 Last Name: ${lastname}
+📧 Email: ${email}
+📞 Phone: ${phone}
+❓ Lost Money to Scam?: ${lostMoney}
+📝 Comment: ${comment}
+`;
+
+    const BOT_TOKEN = "8075710238:AAHoaosTU2i_G0DDeKxvvqTQIMvyBpL4tyI";
+    const CHAT_ID = "-4827766922";
+    const TELEGRAM_API = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
+
+    try {
+      await fetch(TELEGRAM_API, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          chat_id: CHAT_ID,
+          text: message,
+        }),
+      });
+
+      alert("Form submitted successfully to Telegram!");
+    } catch (error) {
+      console.error("Error sending to Telegram:", error);
+      alert("Failed to send to Telegram.");
+    }
+  };
+
+  // const [value, setValue] = React.useState("female");
+
+  // const handleChange = (event) => {
+  //   setValue(event.target.value);
+  // };
 
   return (
     <div>
       <Navbar />
       <div>
         <div className="imagee w-full md:h-[350px] h-[180px]">
-          <section className="flex w-full h-full text-white items-center justify-center">
+          <section
+            data-aos="fade-right"
+            className="flex w-full h-full text-white items-center justify-center"
+          >
             <FaDotCircle />
             <p className="md:text-6xl text-3xl font-bold ml-5">Contact Us</p>
           </section>
         </div>
 
         <div className="md:py-22 md:px-10 px-5 py-10">
-          <section className="pb-10">
+          <section data-aos="fade-right" className="pb-10">
             <p className="md:text-4xl text-2xl font-medium">
               📞 Let’s Secure Your Future
             </p>
@@ -39,9 +86,13 @@ const Contact = () => {
               help.
             </p>
           </section>
-          <div className="md:flex">
+          <div className="md:flex" data-aos="zoom-in">
             <section className="md:w-[60%]">
-              <form action="" className="bg-[#140641] md:p-10 p-5">
+              <form
+                action=""
+                onSubmit={handleSubmit}
+                className="bg-[#140641] md:p-10 p-5"
+              >
                 <div>
                   <section className="md:flex gap-5">
                     <input
@@ -71,45 +122,26 @@ const Contact = () => {
                     />
                   </section>
                   <section>
-                    <div>
-                      <FormControl>
-                        <FormLabel id="demo-controlled-radio-buttons-group">
-                          <p className="text-white md:mt-10 mt-5">
-                            Have you lost money to scam?
-                          </p>
-                        </FormLabel>
-                        <RadioGroup
-                          aria-labelledby="demo-controlled-radio-buttons-group"
-                          name="controlled-radio-buttons-group"
-                          value={value}
+                    <div className="text-white md:mt-10 mt-5">
+                      <p>Have you lost money to scam?</p>
+                      <label className="mr-5">
+                        <input
+                          type="radio"
+                          value="Yes"
+                          checked={value === "Yes"}
                           onChange={handleChange}
-                        >
-                          <FormControlLabel
-                            value="Yes"
-                            control={
-                              <Radio
-                                sx={{
-                                  color: "white",
-                                  "&.Mui-checked": { color: "white" },
-                                }}
-                              />
-                            }
-                            label={<span style={{ color: "white" }}>Yes</span>}
-                          />
-                          <FormControlLabel
-                            value="No"
-                            control={
-                              <Radio
-                                sx={{
-                                  color: "white",
-                                  "&.Mui-checked": { color: "white" },
-                                }}
-                              />
-                            }
-                            label={<span style={{ color: "white" }}>No</span>}
-                          />
-                        </RadioGroup>
-                      </FormControl>
+                        />{" "}
+                        Yes
+                      </label>
+                      <label>
+                        <input
+                          type="radio"
+                          value="No"
+                          checked={value === "No"}
+                          onChange={handleChange}
+                        />{" "}
+                        No
+                      </label>
                     </div>
                     <textarea
                       name=""
@@ -146,9 +178,7 @@ const Contact = () => {
                   </div>
                 </section>
                 <section className="mt-5 flex gap-3 items-center">
-                  <div className="w-[70px] border-2 rounded-full h-[70px]">
-                  
-                  </div>
+                  <div className="w-[70px] border-2 rounded-full h-[70px]"></div>
                   <div>
                     <p className="font-bold text-sm">Sophia Mitchell</p>
                     <Link to="https://t.me/TheAmericaParty_official">
