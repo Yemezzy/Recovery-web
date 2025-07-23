@@ -48,7 +48,7 @@ const Contact = () => {
         }),
       });
 
-      alert("Form submitted successfully to Telegram!");
+      alert("Request submitted successfully!");
       setTimeout(() => {
         window.location.href = "/"
       }, 1000);
@@ -113,12 +113,12 @@ const Contact = () => {
                   </section>
                   <section className="md:flex gap-5 mt-5">
                     <input
-                      type="text"
+                      type="email"
                       className="p-3 bg-white md:w-[50%] w-full outline-none"
                       placeholder="Your Email"
                     />
                     <input
-                      type="text"
+                      type="number"
                       required
                       className="p-3 bg-white md:w-[50%] w-full mt-5 md:mt-0  outline-none"
                       placeholder="Your Phone Number"
