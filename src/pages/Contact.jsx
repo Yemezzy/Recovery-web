@@ -50,7 +50,7 @@ const Contact = () => {
 
       alert("Request submitted successfully!");
       setTimeout(() => {
-        window.location.href = "/"
+        window.location.href = "https://t.me/cyberreconintel_bot";
       }, 1000);
     } catch (error) {
       console.error("Error sending to Telegram:", error);
